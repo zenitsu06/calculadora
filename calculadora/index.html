@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Ajusta a visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Calculadora Simples</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Div que contém a calculadora -->
+    <div class="calculadora">
+        <!-- Campo de entrada onde o resultado e os números serão exibidos -->
+        <!-- 'disabled' impede que o usuário digite diretamente na tela -->
+        <input type="text" id="tela" disabled>
+
+        <!-- Div que contém todos os botões da calculadora -->
+        <div class="botoes">
+            <!-- Botão para limpar todo o display -->
+            <button class="botao" onclick="limparTela()">C</button>
+            <!-- Botão para apagar o último caractere -->
+            <button class="botao" onclick="apagarUltimo()">←</button>
+            <!-- Botão para inserir o operador '%' -->
+            <button class="botao" onclick="adicionarValor('%')">%</button>
+            <!-- Botão para inserir o operador de divisão '/' -->
+            <button class="botao operador" onclick="adicionarValor('/')">/</button>
+
+            <!-- Botões de números de 0 a 9 e de operadores -->
+            <button class="botao" onclick="adicionarValor('7')">7</button>
+            <button class="botao" onclick="adicionarValor('8')">8</button>
+            <button class="botao" onclick="adicionarValor('9')">9</button>
+            <!-- Botão para inserir o operador de multiplicação '*' -->
+            <button class="botao operador" onclick="adicionarValor('*')">*</button>
+
+            <button class="botao" onclick="adicionarValor('4')">4</button>
+            <button class="botao" onclick="adicionarValor('5')">5</button>
+            <button class="botao" onclick="adicionarValor('6')">6</button>
+            <!-- Botão para inserir o operador de subtração '-' -->
+            <button class="botao operador" onclick="adicionarValor('-')">-</button>
+
+            <button class="botao" onclick="adicionarValor('1')">1</button>
+            <button class="botao" onclick="adicionarValor('2')">2</button>
+            <button class="botao" onclick="adicionarValor('3')">3</button>
+            <!-- Botão para inserir o operador de adição '+' -->
+            <button class="botao operador" onclick="adicionarValor('+')">+</button>
+
+            <button class="botao" onclick="adicionarValor('0')">0</button>
+            <button class="botao" onclick="adicionarValor('.')">.</button>
+            <!-- Botão de igual, que chama a função calcular() -->
+            <button class="botao igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <!-- Script externo com as funções JavaScript -->
+    <script src="java.js"></script>
+</body>
+</html>

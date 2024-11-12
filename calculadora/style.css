@@ -1,0 +1,106 @@
+/* Define a estilização global do corpo da página */
+body {
+    /* Define a fonte utilizada */
+    font-family: Arial, sans-serif;
+    /* Centraliza a calculadora horizontal e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Define a altura da tela como 100% da janela */
+    height: 100vh;
+    /* Remove a margem padrão do body */
+    margin: 0;
+    /* Define a cor de fundo da página */
+    background: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+}
+/* Estilização da div principal da calculadora */
+.calculadora {
+    width: 18rem;
+    /* Define a cor de fundo da calculadora */
+    background-color: #ffffff;
+    /* Define um espaçamento interno (padding) ao redor do conteúdo */
+    padding: 3vh 3vh 3vh 3vh;
+    /* Arredonda os cantos da calculadora */
+    border-radius: 1rem;
+    /* Adiciona uma sombra ao redor da calculadora */
+    box-shadow: 0 10px 10px 0 #eca950;
+}
+
+/* Estilo do display onde os números e resultados são exibidos */
+#tela {
+    /* Define a largura do display como 100% do elemento pai */
+    width: 93%;
+    /* Define um espaçamento interno (padding) */
+    padding: 15px;
+    /* Aumenta o tamanho da fonte para 2em */
+    font-size: 2em;
+    /* Remove a borda padrão */
+    border: none;
+    /* Define a cor de fundo do display */
+    background-color: #f7f7f7;
+    /* Alinha o texto à direita */
+    text-align: right;
+    /* Adiciona uma margem inferior para separar o display dos botões */
+    margin-bottom: 10px;
+    /* Arredonda os cantos do display */
+    border-radius: 5px;
+}
+
+/* Estiliza a div que contém os botões */
+.botoes {
+    /* Define um layout de grid com 4 colunas */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Define o espaçamento entre os botões */
+    gap: 1px;
+}
+
+/* Estilo geral para todos os botões */
+.botao {
+    width: 4rem;
+    height: 3rem;
+    margin: 0.3rem;
+    text-align: center;
+    align-items: center;
+    /* Define o espaçamento interno dos botões */
+    padding: 20px;
+    /* Aumenta o tamanho da fonte dos botões */
+    font-size: 1.5em;
+    /* Remove a borda padrão dos botões */
+    border: none;
+    /* Arredonda os cantos dos botões */
+    border-radius: 0.5rem;
+    /* Define a cor de fundo dos botões */
+    background-color: #e0e0e0;
+    /* Define o cursor como pointer ao passar o mouse */
+    cursor: pointer;
+    /* Define uma transição suave ao alterar a cor do botão */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px rgb(252, 168, 113);
+}
+
+/* Estilização para os botões de operadores */
+.operador {
+    /* Define uma cor de fundo laranja para os operadores */
+    background-color: #ff9f43;
+    /* Define a cor do texto como branca */
+    color: white;
+}
+
+/* Estilização para o botão de igual */
+.igual {
+    /* Define uma cor de fundo verde */
+    background-color: #28a745;
+    /* Define a cor do texto como branca */
+    color: white;
+}
+
+/* Efeito de hover (passar o mouse) nos botões */
+.botao:hover {
+    /* Altera a cor de fundo dos botões ao passar o mouse */
+    background-color: #d5d5d5;
+}
+.botao:active{
+    transform: translateY(0.1vh);
+    box-shadow: 0 2px #cac5b6;
+}
